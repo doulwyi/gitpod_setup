@@ -9,4 +9,24 @@ tasks:
   - init: yarn install && yarn run build
     command: yarn run start
 
-
+vscode:
+  extensions:
+    - GitHub.github-vscode-theme
+    - streetsidesoftware.code-spell-checker
+    - streetsidesoftware.code-spell-checker-portuguese-brazilian
+    - adpyke.codesnap
+    - kamikillerto.vscode-colorize
+    - clinyong.vscode-css-modules
+    - ms-azuretools.vscode-docker
+    - mikestead.dotenv
+    - dbaeumer.vscode-eslint
+    - eamodio.gitlens
+    - wix.vscode-import-cost
+    - PKief.material-icon-theme
+    - equinusocio.vsc-material-theme-icons
+    - streetsidesoftware.code-spell-checker-portuguese
+    - esbenp.prettier-vscode
+    - Prisma.prisma
+    - csstools.postcss
+    - TabNine.tabnine-vscode
+    - bradlc.vscode-tailwindcss
