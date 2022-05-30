@@ -6,8 +6,13 @@ image:
   file: .gitpod.dockerfile
 
 tasks:
-  - init: yarn install && yarn run build
-    command: yarn run start
+  - name: Initialization
+    init: /bin/zsh -l
+    command: yarn
+
+ports:
+- port: 8000
+  onOpen: open-browser
 
 vscode:
   extensions:
