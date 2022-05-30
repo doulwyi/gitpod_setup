@@ -7,8 +7,9 @@ image:
 
 tasks:
   - name: Initialization
-    init: /bin/zsh -l
-    command: yarn
+    before: /bin/zsh
+    init: yarn
+    command: yarn dev 
 
 ports:
 - port: 8000
@@ -35,3 +36,13 @@ vscode:
     - csstools.postcss
     - TabNine.tabnine-vscode
     - bradlc.vscode-tailwindcss
+
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
+    pullRequestsFromForks: true
+    addCheck: false
+    addComment: false
+    addBadge: true
