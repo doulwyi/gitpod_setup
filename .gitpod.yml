@@ -8,12 +8,11 @@ image:
 
 tasks:
   - name: Initialization
-    before: /bin/zsh -l
-    init: /bin/zsh -i -c yarn
-    command: /bin/zsh -i -c yarn dev 
+    init: /bin/zsh -i -c yarn && /bin/zsh -i -c yarn dev
+    command:  /bin/zsh -l
 
 ports:
-- port: 8000
+- port: 3000
   onOpen: open-browser
 
 vscode:
