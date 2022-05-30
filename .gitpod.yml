@@ -7,9 +7,8 @@ image:
 
 tasks:
   - name: Initialization
-    before: /bin/zsh
-    init: yarn
-    command: yarn dev 
+    init: /bin/zsh -i -c yarn
+    command: /bin/zsh -i -c yarn dev 
 
 ports:
 - port: 8000
